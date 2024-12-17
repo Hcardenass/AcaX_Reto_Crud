@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reto - Crud</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <header>
+    <h1>Gestión de Tickets</h1>
+  </header>
+
+  <main>
+    <div class="container">
+      <section id="formulario-seccion">
+        <h2>Agregar/Editar Ticket</h2>
+        <form id="tarjeta-form">
+          <input type="hidden" id="tarjeta-id">
+          <div class="form-group">
+            <label for="titulo">Titulo:</label>
+            <input type="text" id="titulo" required>
+          </div>
+
+          <div class="form-group">
+            <label for="descripcion">Descripción:</label>
+            <textarea id="descripcion" required></textarea>
+          </div>
+          <button type="submit" id="submit-btn">Agregar Ticket</button>
+          <button type="button" id="cancelar-btn" style="display: none;">Cancelar</button>
+        </form>
+      </section>
+
+      <section id="lista-seccion">
+        <h2>Lista de Tickets</h2>
+        <div id="componente-lista">
+          <!--  <div class="tarjeta">
+         <div>
+             <button class="btn-editar">Editar</button>
+            <button class="btn-eliminar">Eliminar</button> 
+          </div> 
+        </div>-->
+        </div>
+      </section>
+    </div>
+  </main>
+
+
+  <footer>
+    <p>Creado por Hector Adrian Cardenas Camacho &copy;2024 Todos los Derechos Reservados</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
